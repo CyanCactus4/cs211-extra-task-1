@@ -71,7 +71,7 @@ double to_float_hours(int hours, int minutes, int seconds)
         1.01
     */
 }
-
+//Return the hour as seen on a 24 - hour clock.
 double to_24_hour_clock(double hours)
 {
     return fmod(hours, 24);
@@ -102,6 +102,7 @@ double to_24_hour_clock(double hours)
     */
 }
 
+
 /*
     Implement three functions
         * get_hours
@@ -122,6 +123,19 @@ double to_24_hour_clock(double hours)
     In other words, if 3800 seconds have elapsed since midnight, 
     it is currently 01:03:20 (hh:mm:ss).
 */
+
+//¬озврачает количество секунд в seconds с полуночи
+int get_seconds(double seconds) {
+    return fmod(seconds, 60);
+}
+//¬озврачает количество минут в seconds с полуночи
+int get_minutes(double seconds) {
+    return fmod(seconds, 3600) / 60;
+}
+//¬озврачает количество часов в seconds с полуночи
+int get_hours(double seconds) {
+    return seconds / 3600;
+}
 
 double time_to_utc(int utc_offset, double time)
 {
