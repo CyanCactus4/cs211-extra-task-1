@@ -1,5 +1,3 @@
-﻿  extra-task-1.cpp
-  main.cpp
-C:\Users\Amethyst\Desktop\HW\cs211-extra-task-1\HomeWork\HomeWork\main.cpp(4,6): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-  Создание кода...
+﻿  main.cpp
+C:\Users\Amethyst\Desktop\HW\cs211-extra-task-1\HomeWork\HomeWork\main.cpp(5,6): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
   HomeWork.vcxproj -> C:\Users\Amethyst\Desktop\HW\cs211-extra-task-1\HomeWork\x64\Debug\HomeWork.exe

@@ -1,4 +1,5 @@
 #include <cassert>
+#include <cmath>
 #include "extra-task-1.h"
 
 //Return the number of seconds later that a time in seconds time_2 is than a time in seconds time_1.
@@ -73,7 +74,7 @@ double to_float_hours(int hours, int minutes, int seconds)
 
 double to_24_hour_clock(double hours)
 {
-    return 0;
+    return fmod(hours, 24);
     /*
         hours is a number of hours since midnight. Return the
         hour as seen on a 24-hour clock.
