@@ -1,6 +1,7 @@
+#include <cassert>
 #include "extra-task-1.h"
 
-//Return the number of seconds later that a time in seconds
+//Return the number of seconds later that a time in seconds time_2 is than a time in seconds time_1.
 double seconds_difference(double time_1, double time_2)
 {
     return time_2 - time_1;
@@ -24,7 +25,7 @@ double seconds_difference(double time_1, double time_2)
         0.0
     */
 }
-
+//Return the number of hours later that a time in seconds time_2 is than a time in seconds time_1.
 double hours_difference(double time_1, double time_2)
 {
     return seconds_difference(time_1, time_2) / 3600;
@@ -45,10 +46,14 @@ double hours_difference(double time_1, double time_2)
         0.0
     */
 }
-
+//Return the total number of hours in the specified number of hours, minutes, and seconds.
 double to_float_hours(int hours, int minutes, int seconds)
 {
-    return 0;
+    assert(hours >= 0);
+    assert(minutes >= 0 && minutes < 60);
+    assert(seconds >= 0 && seconds < 60);
+    
+    return hours + (double)minutes / 60 + (double)seconds / 3600;
     /*
         Return the total number of hours in the specified number
         of hours, minutes, and seconds.
