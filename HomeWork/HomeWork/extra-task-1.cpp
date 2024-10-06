@@ -1,5 +1,10 @@
+#include "extra-task-1.h"
+
+//Return the number of seconds later that a time in seconds
 double seconds_difference(double time_1, double time_2)
 {
+    return time_2 - time_1;
+
     // your implementation goes here...
     
     /*    
