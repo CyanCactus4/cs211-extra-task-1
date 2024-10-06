@@ -9,7 +9,7 @@ double hours_difference(double time_1, double time_2);
 double to_float_hours(int hours, int minutes, int seconds);
 //Return the hour as seen on a 24 - hour clock.
 double to_24_hour_clock(double hours);
-
+//Return time at UTC + 0, where utc_offset is the number of hours away from UTC + 0.
 double time_to_utc(int utc_offset, double time);
 
 double time_from_utc(int utc_offset, double time);

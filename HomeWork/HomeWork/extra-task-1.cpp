@@ -136,10 +136,10 @@ int get_minutes(double seconds) {
 int get_hours(double seconds) {
     return seconds / 3600;
 }
-
+//Return time at UTC + 0, where utc_offset is the number of hours away from UTC + 0.
 double time_to_utc(int utc_offset, double time)
 {
-    return 0;
+    return to_24_hour_clock(time - utc_offset);
     /*
         Return time at UTC+0, where utc_offset is the number of hours away from
         UTC+0.
